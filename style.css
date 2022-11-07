@@ -70,17 +70,26 @@ main{
 
 .menu-container{
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #D2D2D2;
     /* margin-top: 1em; */
     padding: 1em 0;
 }
 
-.menu-details{
+.menu-items > img{
+    max-width: 70px;
+    margin-right: 1em;
+}
+
+.menu-items{
+    display: flex;
+}
+
+/* .menu-details{
     align-self: flex-start;
     width: 80%;
-}
+} */
 
 
 .menu-order-btn{
