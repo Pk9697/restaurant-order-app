@@ -50,6 +50,7 @@ Layout
 }
 
 header{
+    background-color: #3C3C3C;
     background-image: url('./images/cover.jpg');
     background-size: cover;
     background-position: center;
@@ -60,6 +61,7 @@ header{
     justify-content: center;
     padding: 0 2em;
 }
+
 header p{
     margin-top: 1em;
 }
@@ -86,10 +88,9 @@ main{
     display: flex;
 }
 
-/* .menu-details{
-    align-self: flex-start;
-    width: 80%;
-} */
+.menu-details{
+    min-width: 60%;
+}
 
 
 .menu-order-btn{
@@ -176,6 +177,7 @@ main{
     font-size: 20px;
 }
 .modal >h2{
+    margin-top: 3em;
     margin-bottom: 2em;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -194,4 +196,13 @@ footer{
 
 .orders-container{
     display: none;
+}
+
+.order-success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECFDF5;
+    min-height: 15vh;
+    font-weight: 400;
 }

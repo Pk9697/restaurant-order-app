@@ -41,25 +41,27 @@
         <footer>
             <div class="orders-container" id="orders-container">
                 <h2>Your order</h2>
-                <div class="total-orders" id="total-orders">
-                    
+                <div class="total-orders" id="total-orders"> 
                 </div>
                 <div class="total-price">
                     <h2>Total price:</h2>
                     <h2 id="total-price">$0</h2>
                 </div>
-                <button class="complete-menu-order-btn">Complete order</button>
+                <button class="complete-menu-order-btn" id="complete-order-btn">Complete order</button>
+            </div>
+            <div id="order-success" class="order-success">
+
             </div>
         </footer>
 
-        <div class="modal">
+        <div class="modal" id="modal">
             <h2>Enter card details</h2>
-            <div>
-                <input id="name" type="text" placeholder="Enter your name">
-                <input id="card" type="text" placeholder="Enter card number">
-                <input id="cvv" type="text" placeholder="Enter CVV">
-            </div>
-            <button class="complete-menu-order-btn">Pay</button>
+            <form id="card-details-form">
+                <input name="name" id="name" type="text" placeholder="Enter your name" required>
+                <input id="card" type="number" placeholder="Enter card number" required>
+                <input id="cvv" type="number" placeholder="Enter CVV" required>
+                <button class="complete-menu-order-btn" id="pay-btn">Pay</button>
+            </form>
         </div>
     </div>
 
