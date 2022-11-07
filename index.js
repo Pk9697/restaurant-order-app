@@ -2,7 +2,7 @@ import { menuArray } from "./data.js";
 
 let ordersArray = [];
 const cardForm=document.getElementById('card-details-form')
-console.log(cardForm)
+// console.log(cardForm)
 const orderSuccess=document.getElementById('order-success');
 document.addEventListener("click", function (e) {
     // e.preventDefault()
@@ -18,7 +18,7 @@ document.addEventListener("click", function (e) {
 });
 
 cardForm.addEventListener('submit',function(e){
-    console.log('submitted')
+    // console.log('submitted')
     e.preventDefault()
     const formData=new FormData(cardForm)
     document.getElementById('modal').style.display="none"
