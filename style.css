@@ -184,3 +184,14 @@ main{
 }
 
  
+footer{
+    padding: 0 2em;
+}
+
+/* .hidden{
+    display: none;
+} */
+
+.orders-container{
+    display: none;
+}
