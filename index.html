@@ -5,45 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
+    <!-- Google font Smythe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
     <!-- Font Awesome CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Jimmy's Diner</h1>
-        <p>The best burgers and pizzas in town</p>
-    </header>
-
-    <main>
-        <div class="orders-container">
-            <img src="./images/pizza.png" alt="">
-            <div class="order-details">
-                <h2>Pizza</h2>
-                <p>pepperoni,mushroom,mozarella</p>
-                <h2>$14</h2>
+    <div class="container">
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <p>The best burgers and pizzas in town</p>
+        </header>
+    
+        <main>
+            <div class="order-container">
+                <img src="./images/pizza.png" alt="">
+                <div class="order-details">
+                    <h2>Pizza</h2>
+                    <p>pepperoni,mushroom,mozarella</p>
+                    <h2>$14</h2>
+                </div>
+                <div class="order-btn">
+                    <i class="fa-thin fa-plus"></i>
+                </div>
             </div>
-            <i class="fa-thin fa-plus order-btn"></i>
-        </div>
-        <div class="orders-container">
-            <img src="./images/pizza.png" alt="">
-            <div class="order-details">
-                <h2>Pizza</h2>
-                <p>pepperoni,mushroom,mozarella</p>
-                <h2>$14</h2>
+            <div class="order-container">
+                <img src="./images/pizza.png" alt="">
+                <div class="order-details">
+                    <h2>Pizza</h2>
+                    <p>pepperoni,mushroom,mozarella</p>
+                    <h2>$14</h2>
+                </div>
+                <div class="order-btn">
+                    <i class="fa-thin fa-plus"></i>
+                </div>
             </div>
-            <i class="fa-thin fa-plus order-btn"></i>
-        </div>
-        <div class="orders-container">
-            <img src="./images/pizza.png" alt="">
-            <div class="order-details">
-                <h2>Pizza</h2>
-                <p>pepperoni,mushroom,mozarella</p>
-                <h2>$14</h2>
+            <div class="order-container">
+                <img src="./images/pizza.png" alt="">
+                <div class="order-details">
+                    <h2>Pizza</h2>
+                    <p>pepperoni,mushroom,mozarella</p>
+                    <h2>$14</h2>
+                </div>
+                <div class="order-btn">
+                    <i class="fa-thin fa-plus"></i>
+                </div>
             </div>
-            <i class="fa-thin fa-plus order-btn"></i>
+            <div class="total-price-div">
+                <h2>Your order</h2>
+                <div class="total-orders">
+                    <div class="each-order">
+                        <div class="each-order-name">
+                            <h2>Pizza</h2>
+                            <button>remove</button>
+                        </div>
+                        <h2>$14</h2>
+                    </div>
+                    <div class="each-order">
+                        <div class="each-order-name">
+                            <h2>Pizza</h2>
+                            <button>remove</button>
+                        </div>
+                        <h2>$14</h2>
+                    </div>
+                </div>
+                <div class="total-price">
+                    <h2>Total price:</h2>
+                    <h2>$14</h2>
+                </div>
+                <button class="complete-order-btn">Complete order</button>
+            </div>
+        </main>
+        <div class="modal">
+            <h2>Enter card details</h2>
+            <div>
+                <input id="name" type="text" placeholder="Enter your name">
+                <input id="card" type="text" placeholder="Enter card number">
+                <input id="cvv" type="text" placeholder="Enter CVV">
+            </div>
+            <button class="complete-order-btn">Pay</button>
         </div>
-    </main>
+    </div>
 
     <script src="./index.js"></script>
 </body>
