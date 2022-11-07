@@ -2,9 +2,10 @@ import { menuArray } from "./data.js";
 
 let ordersArray = [];
 const cardForm=document.getElementById('card-details-form')
+console.log(cardForm)
 const orderSuccess=document.getElementById('order-success');
 document.addEventListener("click", function (e) {
-    e.preventDefault()
+    // e.preventDefault()
   // console.log(e.target.dataset)
   if (e.target.dataset.addorder) {
     addItemToOrders(e.target.dataset.addorder);
@@ -13,7 +14,12 @@ document.addEventListener("click", function (e) {
     removeItemFromOrders(e.target.dataset.removeorder);
   } else if(e.target.id==='complete-order-btn'){
     document.getElementById('modal').style.display="flex"
-  } else if(e.target.id==='pay-btn'){
+} 
+});
+
+cardForm.addEventListener('submit',function(e){
+    console.log('submitted')
+    e.preventDefault()
     const formData=new FormData(cardForm)
     document.getElementById('modal').style.display="none"
     ordersArray=[]
@@ -22,9 +28,7 @@ document.addEventListener("click", function (e) {
     document.getElementById('order-success').innerHTML=`
         <h2>Thanks, ${formData.get('name')}! Your order is on its way!</h2>
     `
-  }
-});
-
+})
 
 
 function removeItemFromOrders(orderId) {

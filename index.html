@@ -58,9 +58,9 @@
             <h2>Enter card details</h2>
             <form id="card-details-form">
                 <input name="name" id="name" type="text" placeholder="Enter your name" required>
-                <input id="card" type="number" placeholder="Enter card number" required>
-                <input id="cvv" type="number" placeholder="Enter CVV" required>
-                <button class="complete-menu-order-btn" id="pay-btn">Pay</button>
+                <input id="card" type="number" placeholder="Enter card number" required >
+                <input id="cvv" type="number" placeholder="Enter CVV" minlength="3" required >
+                <button type="submit" class="complete-menu-order-btn" id="pay-btn">Pay</button>
             </form>
         </div>
     </div>
