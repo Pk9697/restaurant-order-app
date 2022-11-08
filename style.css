@@ -157,7 +157,7 @@ main{
     bottom: 0;
     margin: auto;
     height: 542px;
-    width: 470px;
+    max-width: 470px;
     border-radius: 5px;
     box-shadow: 0px 0px 60px 2px #666;
     background-color: #ffffff;
